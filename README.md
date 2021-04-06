@@ -11,21 +11,21 @@ RESEARCH PAPER
 Driver fatigue is one of the major issue causes accidents in the world. Detecting the driver drowsiness is one  of  the  solution  for  the above problem. In this project we aim to detect drowsiness of the driver using    opencv   by  monitoring the eyes of the driver. If the eyes closed certain time period  than  the alarm sound alert the driver. In addition to the above problem in this project we detect the face of the driver, age of the driver and gender of the driver using opencv and machine learning algorithms.
 KEYWORDS: Driver drowsiness, eye detection, opencv.
 
-- INTRODUCTION: 
+- **INTRODUCTION**: 
 In the world every day  a lot of accidents are happening because of driver fatigue. Vehicles are increasing rapidly. A  lot of new vehicles launching every day in the world. In these vehicles speed limit is extremely high, they are very fast. So drivers has to be very careful while driving these high speed vehicles on the road. In lot of cities the roads are not good up to the speed of the new vehicles. So  a lot of accidents happening on the roads. It has a lot of effect on our  life. One of the major issue is driver fatigue. Because of driver fatigue daily  a lot of accidents happening in the world. It  effects a lot in the world. Educated people or non educated people are seriously effecting these road accidents because of driver fatigue. So driver fatigue is the major issue in the world. One of the solution to driver fatigue is detecting driver drowsiness. For this problem we can find solution using machine learning. Machine learning has lot of techniques and algorithms for this problem. One of the technique is OpenCV (open source computer vision). OpenCV has inbuilt algorithm to capture the image from the web cam. We use OpenCV technique for detecting images from the camera, edit the images, write something on the detected images, crop images on the detected images, copy images. After  detecting image through OpenCV we can find the age of the driver, gender of the driver, face of  the driver. For detecting age, gender,face of a driver we use CNN(Convolutional neural network) algorithm.
 
-- EXISTING SYSTEM:
+- **EXISTING SYSTEM**:
 Gaussian Mixture Models was used to represent the distribution of facial patches. In GMM were used again for representing the distribution of local facial  measurements, but robust descriptors were used instead of pixel patches. Finally, instead of GMM ,Hidden-MarkovModel, super-vectors were used for representing face patch distributions.  SVM classifiers were used by, applied directly to image insensities. Rather than using SVM, used Adaboost for the same purpose, here again applied to image intensities. Finally,viewpoint-invariant age and gender classification was presented.
 - Disadvantages:
 -A drawback of those methods is that they require input images to be near-frontal and well-aligned. These methods therefore present experimental results only on constrained data sets of near-frontal images.
 
-- SOFTWARE REQUIREMENT SPECIFICATION
+- **SOFTWARE REQUIREMENT SPECIFICATION**
 
 - 5.1 Requirements Specification: 
 
 Requirement Specification provides a high secure storage to the web server efficiently. Software requirements deal with software and hardware resources that need to be installed on a serve which provides optimal functioning for the application. These software and hardware requirements need to be installed before the packages are installed. These are the most common set of requirements defined by any operation system. These software and hardware requirements provide a compatible support to the operation system in developing an application.
 
-- 5.1.1 HARDWARE REQUIREMENTS: 
+- 5.1.1 **HARDWARE REQUIREMENTS**: 
 The hardware requirement specifies each interface of the software elements and the hardware elements of the system. These hardware requirements include configuration characteristics.
 System		 : Pentium IV 2.4 GHz. 
 Hard Disk 	 : 320 GB. 
@@ -33,14 +33,14 @@ Monitor	 : 15 VGA Color.
 Mouse		 : Logitech. 
 RAM		 : 4 GB. 
 
-- 5.1.2 SOFTWARE REQUIREMENTS:
+- 5.1.2 **SOFTWARE REQUIREMENTS**:
 The software requirements specify the use of all required software products like data management system. The required software product specifies the numbers and version. Each interface specifies the purpose of the interfacing software as related to this software product.
 Operating system 	: 	Windows XP/7/10
 Coding Language	: 	python
 Library     	          :             opencv
 IDE 			: 	PYCHARM
 
-- PROPOSED SYSTEM:
+- **PROPOSED SYSTEM**:
 In this project we aim to detect drowsiness of the driver using    opencv   by  monitoring the eyes of the driver. If the eyes closed certain time period  than  the alarm sound alert the driver. In addition to the above problem in this project we detect the face of the driver, age of the driver and gender of the driver using opencv and machine learning algorithms.
 ADVANTAGES:
 1.Easy to execute effective than other approaches.
@@ -50,8 +50,8 @@ ADVANTAGES:
 Age and Gender Classification Age classification. The problem of automatically extracting age related attributes from facial images has received increasing attention in recent years and many methods have been put fourth. A detailed survey of such methods can be found in  and, more recently, in . We note that despite our focus here on age group classification rather thanprecise age estimation (i.e., age regression), the survey below includes methods designed for either task. Early methods for age estimation are based on calculating ratios between different measurements of facial features. Once facial features (e.g. eyes, nose, mouth, chin, etc.) are localized and their sizes and distances measured, ratios between them are calculated and used for classifyingthe face into different age categories according to hand-crafted rules. More recently, uses a similar approach to model age progression in subjects under 18 years old. As those methods require accurate localization of facial features, a challenging problem by itself, they are unsuitablefor in-the-wild images which one may expect to find on social platforms. On a different line of work are methods that represent the aging process as a subspace  or a manifold . A drawback of those methods is that they require input images to be near-frontal and well-aligned. These methods therefore present experimental results only on constrained data-sets of near-frontal images. Again, as a consequence, such methods are ill-suited for unconstrained images.  Different from those described above are methods that use local features for representing face images. In  Gaussian Mixture Models (GMM)  were used to represent the distribution of facial patches. In  GMM were used again for representing the distribution of local facial measurements, but robust descriptors were used instead of pixel patches. Finally, instead of GMM, Hidden-Markov-Model, super-vectors were used in  for representing face patch distributions. An alternative to the local image intensity patches are robust image descriptors: Gabor image descriptors  were used in  along with a Fuzzy-LDA classifier which considers a face image as belonging to more than one age class. In  a combination of Biologically-Inspired Features (BIF)  and various manifold-learning methods were used for age estimation. Gabor and local binary patterns (LBP)  features were used in  along with a hierarchical age classifier composed of Support Vector Machines (SVM)  to classify the input image to an age-class. followed by a support vector regression  to estimate a precise age. Finally, proposed improved versions of relevant component analysis  and locally preserving projections . Those methods are used for distance learning and dimensionality reduction, respectively, with Active Appearance Models as an image feature. All of these methods have proven effective on small and/or constrained benchmarks for age estimation. To our knowledge, the best performing methods were demonstrated on the Group Photos benchmark .In  state-of-the-art performance on this benchmark was presented by employing LBP descriptor variations  and a dropout-SVM classifier. We show our proposed method to outperform the results they report on the more challenging Audience benchmark, designed for the same task.  Gender classification. A detailed survey of gender classification methods can be found in and more recently n . Here we quickly survey relevant methods. One of the early methods for gender classification used a neural network trained on a small set of near-frontal face images. In  te combined 3D structure of the head (obtained using a laser scanner) and image intensities were used for classifying gender. SVM classifiers were used by , applied directly to image intensities. Rather than using SVM, usedAdaBoost for the same purpose, here again, applied to image intensities. Finally, viewpoint-invariant age and gender classification was presented by .More recently,  used the Webers Local texture Descriptor for gender recognition, demonstrating near perfect performance on the FERET benchmark . In , intensity, shape and texture features were used with mutual information, again obtaining near-perfect results onthe FERET benchmark.
 SYSTEM DESIGN:
 
-- Modules:
-- Detecting driver face:
+- **Modules**:
+ - Detecting driver face:
 
 This is the system's initialization level. The device must be set up and configured for the current user and conditions every time it is started. The effective identification of heads is the most important step in this level (Figure 2). We can now remove the driver's head if it has been correctly found. The following are the steps in the setup process: I extracting the driver's skin colour and using that information to create a custom skin colour model; and (ii) collecting open/closed eye samples as well as the driver's usual head position. User engagement may be necessary to help achieve these objectives. The driver may be asked to sit comfortably in his or her usual driving position so that the device can assess the upper and lower thresholds required to detect possible nodding. The driver may even be asked to shut their eyes for a few seconds before opening them again. This is sufficient to get the machine up and running. The system's dataset of obtained images will develop over time, and it will be improved.
 - Tracking  :
