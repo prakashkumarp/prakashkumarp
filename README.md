@@ -7,7 +7,7 @@
 
 
 RESEARCH PAPER 
-- ABSTRACT:
+- ** ABSTRACT **:
 Driver fatigue is one of the major issue causes accidents in the world. Detecting the driver drowsiness is one  of  the  solution  for  the above problem. In this project we aim to detect drowsiness of the driver using    opencv   by  monitoring the eyes of the driver. If the eyes closed certain time period  than  the alarm sound alert the driver. In addition to the above problem in this project we detect the face of the driver, age of the driver and gender of the driver using opencv and machine learning algorithms.
 KEYWORDS: Driver drowsiness, eye detection, opencv.
 
