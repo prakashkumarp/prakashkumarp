@@ -91,7 +91,7 @@ Vehicle-based features	Steering wheel movement (SWM) Standard deviation of lane 
 Physiological and behavioral features	ECG, EEG, Pulse rate	Support Vector Mechanism (SVM), Karolinska sleepiness scale (KSS)	80%
 
 
-- CONCLUSION:
+- **CONCLUSION**:
 The proposed one is successfully run and tested. It is detecting accurately driver drowsiness and age, gender, face of a driver. The proposed algorithm for detecting face,gender,age is cnn. For detecting drowsiness we use OpenCV technique.
 
 - **SCOPE FOR FUTURE WORK**: 
