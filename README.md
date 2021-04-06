@@ -13,11 +13,11 @@ Gaussian Mixture Models was used to represent the distribution of facial patches
 
 - **SOFTWARE REQUIREMENT SPECIFICATION**
 
-      - 5.1 Requirements Specification: 
+      -  Requirements Specification: 
 
 Requirement Specification provides a high secure storage to the web server efficiently. Software requirements deal with software and hardware resources that need to be installed on a serve which provides optimal functioning for the application. These software and hardware requirements need to be installed before the packages are installed. These are the most common set of requirements defined by any operation system. These software and hardware requirements provide a compatible support to the operation system in developing an application.
 
-      - 5.1.1 HARDWARE REQUIREMENTS: 
+          -  HARDWARE REQUIREMENTS: 
 The hardware requirement specifies each interface of the software elements and the hardware elements of the system. These hardware requirements include configuration characteristics.
 System		 : Pentium IV 2.4 GHz. 
 Hard Disk 	 : 320 GB. 
@@ -25,7 +25,7 @@ Monitor	 : 15 VGA Color.
 Mouse		 : Logitech. 
 RAM		 : 4 GB. 
 
-       - 5.1.2 SOFTWARE REQUIREMENTS:
+       -  SOFTWARE REQUIREMENTS:
 The software requirements specify the use of all required software products like data management system. The required software product specifies the numbers and version. Each interface specifies the purpose of the interfacing software as related to this software product.
 Operating system 	: 	Windows XP/7/10
 Coding Language	: 	python
