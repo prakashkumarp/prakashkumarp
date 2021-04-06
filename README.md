@@ -44,19 +44,19 @@ SYSTEM DESIGN:
 
 - **Modules**:
        
-       - **Detecting driver face**:
+       - Detecting driver face:
 This is the system's initialization level. The device must be set up and configured for the current user and conditions every time it is started. The effective identification of heads is the most important step in this level (Figure 2). We can now remove the driver's head if it has been correctly found. The following are the steps in the setup process: I extracting the driver's skin colour and using that information to create a custom skin colour model; and (ii) collecting open/closed eye samples as well as the driver's usual head position. User engagement may be necessary to help achieve these objectives. The driver may be asked to sit comfortably in his or her usual driving position so that the device can assess the upper and lower thresholds required to detect possible nodding. The driver may even be asked to shut their eyes for a few seconds before opening them again. This is sufficient to get the machine up and running. The system's dataset of obtained images will develop over time, and it will be improved.
         
-          - **Tracking**  :
+          - Tracking  :
 The device enters the normal tracking (monitoring) stage once the driver's head and eyes have been properly identified and all appropriate features have been removed. The continuous monitoring of the driver's eyes within a dynamically allocated tracking area is a key phase in this level. More precisely, the device can assess the size of the monitoring area based on the past history of eye movements to save processing time. For example, if the eyes have been shifting horizontally to the left for a number of frames, that trend is likely to continue in the next frame. As a result, it makes sense to extend the tracking region in the predicted direction of the eyes while shrinking it in the other three directions. The device must also decide the state of the eyes at this stage. Both of these tasks must be completed in real time; depending on the processor's capabilities and current load, it may be possible to skip a few frames from time to time without compromising algorithmic efficiency.
           
-          - **Warning to the driver**:
+          - Warning to the driver:
  The driver's alertness must be boosted if he holds his eyes closed for an extended period of time or begins to nod. The main move in this stage is to keep a close eye on the driver's eyes. The machine must figure out whether the eyes are still closed and where they are in relation to previously defined thresholds. At this point, we can't afford to miss frames.  In practise, eye tracking is done in much the same way as the tracking point, with the addition of the following processes: eye velocity and trajectory measurement, and threshold monitoring. These extra calculations are needed to boost the system's ability to decide whether or not the driver is drowsy.
 
             - Alertness :
 Once the machine has established that the driver appears to be in an irregular driving condition, it must be vigilant in alerting the driver of possible dangers. To draw the driver's attention and increase their alertness level, a combination of audio/visual warnings are used. Alerting has to be implemented in such a way as not to cause the opposite effect of intended and startle the driver into causing an accident.
 
-Load Dataset or gathering data:
+- Load Dataset or gathering data:
 The quantity & quality of your data dictate how accurate our model is
 The outcome of this step is generally a representation of data which we will use for training
 Load data set using pandas read_csv() method.
@@ -90,7 +90,7 @@ method	metric	classifier	accuracy
 Vehicle-based features	Steering wheel movement (SWM) Standard deviation of lane position (SDLP)	Multi-level back propagation neural network	88.02%
 Physiological and behavioral features	ECG, EEG, Pulse rate	Support Vector Mechanism (SVM), Karolinska sleepiness scale (KSS)	80%
 
-.
+
 - CONCLUSION:
 The proposed one is successfully run and tested. It is detecting accurately driver drowsiness and age, gender, face of a driver. The proposed algorithm for detecting face,gender,age is cnn. For detecting drowsiness we use OpenCV technique.
 
