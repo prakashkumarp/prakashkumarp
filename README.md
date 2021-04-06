@@ -95,23 +95,18 @@ The proposed one is successfully run and tested. It is detecting accurately driv
 - SCOPE FOR FUTURE WORK: 
 Future research can concentrate on the use of external factors for fatigue calculation, such as vehicle states, sleeping hours, weather conditions, mechanical details, and so on. Driver drowsiness is a major threat to highway safety, and it is particularly problematic for commercial motor vehicle operators. This severe safety problem is exacerbated by 24-hour activities, high annual mileage, exposure to hazardous environmental conditions, and demanding work schedules. One key step in a series of preventive steps required to solve this issue is to monitor the driver's state of drowsiness and vigilance and provide feedback on their condition so that they can take appropriate action. Currently, there is no way to change the camera's zoom or direction when it is in use. It's likely that future studies will involve automatically zooming in on the eyes once they've been found.
 - **REFERENCES**:
-- [1] COMPUTATIONALLY EFFICIENT FACE DETECTION; B. 
-SCHLKOPF-A. BLAKE, S. ROMDHANI, AND P. TORR. 
+    - [1] COMPUTATIONALLY EFFICIENT FACE DETECTION; B. SCHLKOPF-A. BLAKE, S. ROMDHANI, AND P. TORR. 
  
-- [2] USE OF THE HOUGH TRANSFORMATION TO DETECT LINES AND 
-CURVES IN PICTURE; R. DUDA AND P. E. HART. 
+          - [2] USE OF THE HOUGH TRANSFORMATION TO DETECT LINES AND CURVES IN PICTURE; R. DUDA AND P. E. HART. 
  
-- [3] JAIN, “FACE DETECTION IN COLOR IMAGES; R. L. HSU, M. ABDEL-
-MOTTALEB, AND A. K. JAIN. 
+                - [3] JAIN, “FACE DETECTION IN COLOR IMAGES; R. L. HSU, M. ABDEL-MOTTALEB, AND A. K. JAIN. 
  
-- [4] OPEN/CLOSED EYE ANALYSIS  FOR DROWSINESS DETECTION; 
-P.R. TABRIZI AND R. A. ZOROOFI. 
+                      - [4] OPEN/CLOSED EYE ANALYSIS  FOR DROWSINESS DETECTION; P.R. TABRIZI AND R. A. ZOROOFI. 
  
-- [5] http://ncrb.gov.in/StatPublications/ADSI/ADSI2015/chapter1A%20traffic
-%20accidents.pdf 
+                           - [5] http://ncrb.gov.in/StatPublications/ADSI/ADSI2015/chapter1A%20traffic%20accidents.pdf 
  
-- [6] http://www.jotr.in/text.asp?2013/6/1/1/118718 
+                                 - [6] http://www.jotr.in/text.asp?2013/6/1/1/118718 
  
-- [7] http://dlib.net/face_landmark_detection_ex.cpp.html
+                                       - [7] http://dlib.net/face_landmark_detection_ex.cpp.html
 
 
