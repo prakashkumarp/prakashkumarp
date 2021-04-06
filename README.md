@@ -84,10 +84,9 @@ Predict() method will predict the results.
 
 - **RESULTS AND CONCLUSIONS**:
 The developed drowsiness detection and correction system is capable of detecting drowsiness quickly. The machine can distinguish between natural eye twitch and drowsiness, preventing the driver from falling asleep behind the wheel. The machine works well even when drivers are wearing glasses and in low-light situations. The machine will determine if the eyes are open or closed during the monitoring. The alarm beeps to warn the driver when the eyes are closed for about two seconds. Many incidents can be avoided as a result of this, as well as the driver's and vehicle's protection. Only the most expensive cars have a system for driver protection and vehicle security. Driver protection can be introduced in standard cars using a drowsiness warning system
-COMPARATIVE ANALYSIS OF DROWSINESS DETECTION TECHNIQUE:
-|    Method              |   Metric     |  Classifier     |  Accuracy  |
-| -----------------------| ------------ | --------------- | ---------- |
-| Vehicle-based features | steering wheel moment | multi-level back | $88.09% |
+COMPARATIVE ANALYSIS OF DROWSINESS DETECTION TECHNIQUE:![Screenshot (957)](https://user-images.githubusercontent.com/49792676/113669734-cc02d100-96d1-11eb-983f-5cfccee285f4.png)
+
+
 
 
 
