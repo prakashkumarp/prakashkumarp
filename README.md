@@ -17,7 +17,7 @@ Gaussian Mixture Models was used to represent the distribution of facial patches
 
 Requirement Specification provides a high secure storage to the web server efficiently. Software requirements deal with software and hardware resources that need to be installed on a serve which provides optimal functioning for the application. These software and hardware requirements need to be installed before the packages are installed. These are the most common set of requirements defined by any operation system. These software and hardware requirements provide a compatible support to the operation system in developing an application.
 
-      - 5.1.1 **HARDWARE REQUIREMENTS**: 
+      - 5.1.1 HARDWARE REQUIREMENTS: 
 The hardware requirement specifies each interface of the software elements and the hardware elements of the system. These hardware requirements include configuration characteristics.
 System		 : Pentium IV 2.4 GHz. 
 Hard Disk 	 : 320 GB. 
@@ -25,7 +25,7 @@ Monitor	 : 15 VGA Color.
 Mouse		 : Logitech. 
 RAM		 : 4 GB. 
 
-       - 5.1.2 **SOFTWARE REQUIREMENTS**:
+       - 5.1.2 SOFTWARE REQUIREMENTS:
 The software requirements specify the use of all required software products like data management system. The required software product specifies the numbers and version. Each interface specifies the purpose of the interfacing software as related to this software product.
 Operating system 	: 	Windows XP/7/10
 Coding Language	: 	python
@@ -48,7 +48,7 @@ SYSTEM DESIGN:
 This is the system's initialization level. The device must be set up and configured for the current user and conditions every time it is started. The effective identification of heads is the most important step in this level (Figure 2). We can now remove the driver's head if it has been correctly found. The following are the steps in the setup process: I extracting the driver's skin colour and using that information to create a custom skin colour model; and (ii) collecting open/closed eye samples as well as the driver's usual head position. User engagement may be necessary to help achieve these objectives. The driver may be asked to sit comfortably in his or her usual driving position so that the device can assess the upper and lower thresholds required to detect possible nodding. The driver may even be asked to shut their eyes for a few seconds before opening them again. This is sufficient to get the machine up and running. The system's dataset of obtained images will develop over time, and it will be improved.
 - **Tracking**  :
 The device enters the normal tracking (monitoring) stage once the driver's head and eyes have been properly identified and all appropriate features have been removed. The continuous monitoring of the driver's eyes within a dynamically allocated tracking area is a key phase in this level. More precisely, the device can assess the size of the monitoring area based on the past history of eye movements to save processing time. For example, if the eyes have been shifting horizontally to the left for a number of frames, that trend is likely to continue in the next frame. As a result, it makes sense to extend the tracking region in the predicted direction of the eyes while shrinking it in the other three directions. The device must also decide the state of the eyes at this stage. Both of these tasks must be completed in real time; depending on the processor's capabilities and current load, it may be possible to skip a few frames from time to time without compromising algorithmic efficiency.
-- Warning to the driver:
+- **Warning to the driver**:
  The driver's alertness must be boosted if he holds his eyes closed for an extended period of time or begins to nod. The main move in this stage is to keep a close eye on the driver's eyes. The machine must figure out whether the eyes are still closed and where they are in relation to previously defined thresholds. At this point, we can't afford to miss frames.  In practise, eye tracking is done in much the same way as the tracking point, with the addition of the following processes: eye velocity and trajectory measurement, and threshold monitoring. These extra calculations are needed to boost the system's ability to decide whether or not the driver is drowsy.
 
 - **Alertness** :
@@ -80,7 +80,7 @@ Predict() method will predict the results.
 
 
 
-- RESULTS AND CONCLUSIONS:
+- **RESULTS AND CONCLUSIONS**:
 The developed drowsiness detection and correction system is capable of detecting drowsiness quickly. The machine can distinguish between natural eye twitch and drowsiness, preventing the driver from falling asleep behind the wheel. The machine works well even when drivers are wearing glasses and in low-light situations. The machine will determine if the eyes are open or closed during the monitoring. The alarm beeps to warn the driver when the eyes are closed for about two seconds. Many incidents can be avoided as a result of this, as well as the driver's and vehicle's protection. Only the most expensive cars have a system for driver protection and vehicle security. Driver protection can be introduced in standard cars using a drowsiness warning system
 COMPARATIVE ANALYSIS OF DROWSINESS DETECTION TECHNIQUE:
 
@@ -94,26 +94,24 @@ The proposed one is successfully run and tested. It is detecting accurately driv
 
 - SCOPE FOR FUTURE WORK: 
 Future research can concentrate on the use of external factors for fatigue calculation, such as vehicle states, sleeping hours, weather conditions, mechanical details, and so on. Driver drowsiness is a major threat to highway safety, and it is particularly problematic for commercial motor vehicle operators. This severe safety problem is exacerbated by 24-hour activities, high annual mileage, exposure to hazardous environmental conditions, and demanding work schedules. One key step in a series of preventive steps required to solve this issue is to monitor the driver's state of drowsiness and vigilance and provide feedback on their condition so that they can take appropriate action. Currently, there is no way to change the camera's zoom or direction when it is in use. It's likely that future studies will involve automatically zooming in on the eyes once they've been found.
-REFERENCES:[1] COMPUTATIONALLY EFFICIENT FACE DETECTION; B. 
+- **REFERENCES**:
+- [1] COMPUTATIONALLY EFFICIENT FACE DETECTION; B. 
 SCHLKOPF-A. BLAKE, S. ROMDHANI, AND P. TORR. 
  
-[2] USE OF THE HOUGH TRANSFORMATION TO DETECT LINES AND 
+- [2] USE OF THE HOUGH TRANSFORMATION TO DETECT LINES AND 
 CURVES IN PICTURE; R. DUDA AND P. E. HART. 
  
-[3] JAIN, “FACE DETECTION IN COLOR IMAGES; R. L. HSU, M. ABDEL-
+- [3] JAIN, “FACE DETECTION IN COLOR IMAGES; R. L. HSU, M. ABDEL-
 MOTTALEB, AND A. K. JAIN. 
  
-[4] OPEN/CLOSED EYE ANALYSIS  FOR DROWSINESS DETECTION; 
+- [4] OPEN/CLOSED EYE ANALYSIS  FOR DROWSINESS DETECTION; 
 P.R. TABRIZI AND R. A. ZOROOFI. 
  
-[5] http://ncrb.gov.in/StatPublications/ADSI/ADSI2015/chapter1A%20traffic
+- [5] http://ncrb.gov.in/StatPublications/ADSI/ADSI2015/chapter1A%20traffic
 %20accidents.pdf 
  
-[6] http://www.jotr.in/text.asp?2013/6/1/1/118718 
+- [6] http://www.jotr.in/text.asp?2013/6/1/1/118718 
  
-[7] http://dlib.net/face_landmark_detection_ex.cpp.html
+- [7] http://dlib.net/face_landmark_detection_ex.cpp.html
 
-<!---
-prakashkumarp/prakashkumarp is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+
