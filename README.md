@@ -51,7 +51,7 @@ The device enters the normal tracking (monitoring) stage once the driver's head 
         - Warning to the driver:
  The driver's alertness must be boosted if he holds his eyes closed for an extended period of time or begins to nod. The main move in this stage is to keep a close eye on the driver's eyes. The machine must figure out whether the eyes are still closed and where they are in relation to previously defined thresholds. At this point, we can't afford to miss frames.  In practise, eye tracking is done in much the same way as the tracking point, with the addition of the following processes: eye velocity and trajectory measurement, and threshold monitoring. These extra calculations are needed to boost the system's ability to decide whether or not the driver is drowsy.
 
-          - Alertness :
+   - Alertness :
 Once the machine has established that the driver appears to be in an irregular driving condition, it must be vigilant in alerting the driver of possible dangers. To draw the driver's attention and increase their alertness level, a combination of audio/visual warnings are used. Alerting has to be implemented in such a way as not to cause the opposite effect of intended and startle the driver into causing an accident.
 
 Load Dataset or gathering data:
