@@ -1,12 +1,4 @@
-- 👋 Hi, I’m @prakashkumarp
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- why is this happening to me oh man
-
-
-RESEARCH PAPER 
+  **RESEARCH PAPER**
  - **ABSTRACT**:
 Driver fatigue is one of the major issue causes accidents in the world. Detecting the driver drowsiness is one  of  the  solution  for  the above problem. In this project we aim to detect drowsiness of the driver using    opencv   by  monitoring the eyes of the driver. If the eyes closed certain time period  than  the alarm sound alert the driver. In addition to the above problem in this project we detect the face of the driver, age of the driver and gender of the driver using opencv and machine learning algorithms.
 KEYWORDS: Driver drowsiness, eye detection, opencv.
@@ -19,13 +11,13 @@ Gaussian Mixture Models was used to represent the distribution of facial patches
 - Disadvantages:
 -A drawback of those methods is that they require input images to be near-frontal and well-aligned. These methods therefore present experimental results only on constrained data sets of near-frontal images.
 
-- **SOFTWARE REQUIREMENT SPECIFICATION**
+1.**SOFTWARE REQUIREMENT SPECIFICATION**
 
-- 5.1 Requirements Specification: 
+   - 5.1 Requirements Specification: 
 
 Requirement Specification provides a high secure storage to the web server efficiently. Software requirements deal with software and hardware resources that need to be installed on a serve which provides optimal functioning for the application. These software and hardware requirements need to be installed before the packages are installed. These are the most common set of requirements defined by any operation system. These software and hardware requirements provide a compatible support to the operation system in developing an application.
 
-- 5.1.1 **HARDWARE REQUIREMENTS**: 
+   - 5.1.1 **HARDWARE REQUIREMENTS**: 
 The hardware requirement specifies each interface of the software elements and the hardware elements of the system. These hardware requirements include configuration characteristics.
 System		 : Pentium IV 2.4 GHz. 
 Hard Disk 	 : 320 GB. 
@@ -33,7 +25,7 @@ Monitor	 : 15 VGA Color.
 Mouse		 : Logitech. 
 RAM		 : 4 GB. 
 
-- 5.1.2 **SOFTWARE REQUIREMENTS**:
+   - 5.1.2 **SOFTWARE REQUIREMENTS**:
 The software requirements specify the use of all required software products like data management system. The required software product specifies the numbers and version. Each interface specifies the purpose of the interfacing software as related to this software product.
 Operating system 	: 	Windows XP/7/10
 Coding Language	: 	python
