@@ -1,19 +1,17 @@
 # Driver Drowsiness Detection
 - Modules
 - Yawing
-import cv2
-import dlib
-import numpy as np
+         import cv2
+         import dlib
+                import numpy as np
+    PREDICTOR_PATH = "shape_predictor_68_face_landmarks.dat"
+    predictor = dlib.shape_predictor(PREDICTOR_PATH)
+  #cascade_path='haarcascade_frontalface_default.xml'
+  #cascade = cv2.CascadeClassifier(cascade_path)
+  detector = dlib.get_frontal_face_detector()
 
 
-PREDICTOR_PATH = "shape_predictor_68_face_landmarks.dat"
-predictor = dlib.shape_predictor(PREDICTOR_PATH)
-#cascade_path='haarcascade_frontalface_default.xml'
-#cascade = cv2.CascadeClassifier(cascade_path)
-detector = dlib.get_frontal_face_detector()
-
-
-def get_landmarks(im):
+    def get_landmarks(im):
     rects = detector(im, 1)
 
     if len(rects) > 1:
@@ -22,8 +20,8 @@ def get_landmarks(im):
         return "Error"
     return np.matrix([[p.x, p.y] for p in predictor(im, rects[0]).parts()])
 
-
-def anno_landmarks(im, landmarks):
+ 
+    def anno_landmarks(im, landmarks):
     im = im.copy()
     for ind, point in enumerate(landmarks):
         pos = (point[0, 0], point[0, 1])
