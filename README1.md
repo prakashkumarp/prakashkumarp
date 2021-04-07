@@ -1,8 +1,8 @@
 # Driver Drowsiness Detection
 - **Modules**
-- FacialLandmarks
+- 1. **FacialLandmarks**
 
-# import the necessary packages for facial landmark detection
+ import the necessary packages for facial landmarks detection
     from imutils import face_utils
     import dlib
     import cv2
@@ -15,14 +15,14 @@
     cap = cv2.VideoCapture( 0,cv2.CAP_DSHOW)
  
      while True:
-    # load the input image and convert it to grayscale
+    - load the input image and convert it to grayscale
     _, image = cap.read()
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         
-    # detect faces in the grayscale image
+    - detecting face in the grayscale image
     rects = detector(gray, 0)
     
-    # loop over the face detections
+    - looping over the face detections
     for (ind, rect) in enumerate(rects):
         # determine the facial landmarks for the face region, then
         # convert the facial landmark (x, y)-coordinates to a NumPy
@@ -35,25 +35,25 @@
         for (x, y) in shape:
             cv2.circle(image, (x, y), 1, (0, 255, 0), 2)
     
-    # show the output image with the face detections & facial landmarks
+   
     cv2.imshow("Output", image)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-cv2.destroyAllWindows()
-cap.release()
+     cv2.destroyAllWindows()
+     cap.release()
 
 
-- **Yawing**
+-2. **Yawing**
  
- import cv2
- import dlib
- import numpy as np
- PREDICTOR_PATH = "shape_predictor_68_face_landmarks.dat"
- predictor = dlib.shape_predictor(PREDICTOR_PATH)
- #cascade_path='haarcascade_frontalface_default.xml'
- #cascade = cv2.CascadeClassifier(cascade_path)
- detector = dlib.get_frontal_face_detector()
+      import cv2
+     import dlib
+     import numpy as np
+      PREDICTOR_PATH = "shape_predictor_68_face_landmarks.dat"
+     predictor = dlib.shape_predictor(PREDICTOR_PATH)
+      #cascade_path='haarcascade_frontalface_default.xml'
+     #cascade = cv2.CascadeClassifier(cascade_path)
+     detector = dlib.get_frontal_face_detector()
 
 
     def get_landmarks(im):
