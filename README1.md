@@ -1,6 +1,6 @@
 # Driver Drowsiness Detection
 
-*** Packages to be Installed ***
+***Packages to be Installed***
 - pip install pandas sklearn matplotlib seaborn
 - pip install numpy==1.18
 - pip install scipy==1.1.0
