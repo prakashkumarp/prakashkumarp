@@ -24,14 +24,14 @@
     
     - looping over the face detections
     for (ind, rect) in enumerate(rects):
-        # determine the facial landmarks for the face region, then
-        # convert the facial landmark (x, y)-coordinates to a NumPy
-        # array
+         determine the facial landmarks for the face region, then
+         convert the facial landmark (x, y)-coordinates to a NumPy
+         array
         shape = predictor(gray, rect)
         shape = face_utils.shape_to_np(shape)
     
-        # loop over the (x, y)-coordinates for the facial landmarks
-        # drawing the marks on the image
+         loop over the (x, y)-coordinates for the facial landmarks
+         drawing the marks on the image
         for (x, y) in shape:
             cv2.circle(image, (x, y), 1, (0, 255, 0), 2)
     
