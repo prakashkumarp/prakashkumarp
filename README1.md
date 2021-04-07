@@ -2,10 +2,10 @@
 - **Modules**
 -1. **FacialLandmarks**
 
- import the necessary packages for facial landmarks detection
-    from imutils import face_utils
-    import dlib
-    import cv2
+       import the necessary packages for facial landmarks detection
+     from imutils import face_utils
+     import dlib
+     import cv2
  
 
      p = "shape_predictor_68_face_landmarks.dat"
