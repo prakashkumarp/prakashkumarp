@@ -2,7 +2,7 @@
 - **Modules**
 -1. **FacialLandmarks**
 
-      import the necessary packages for facial landmarks detection
+      _import the necessary packages for facial landmarks detection
        from imutils import face_utils
        import dlib
        import cv2
@@ -10,20 +10,20 @@
 
        p = "shape_predictor_68_face_landmarks.dat"
        detector = dlib.get_frontal_face_detector()
-      predictor = dlib.shape_predictor(p)
+       predictor = dlib.shape_predictor(p)
 
-      cap = cv2.VideoCapture( 0,cv2.CAP_DSHOW)
+       cap = cv2.VideoCapture( 0,cv2.CAP_DSHOW)
  
-      while True:
-     load the given image and convert it into grayscale
-     _, image = cap.read()
-      gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        while True:
+        load the given image and convert it into grayscale
+        _, image = cap.read()
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         
-    detecting face in the grayscale image
-    rects = detector(gray, 0)
+        detecting face in the grayscale image
+        rects = detector(gray, 0)
     
-    looping over the face detections
-    for (ind, rect) in enumerate(rects):
+        looping over the face detections
+        for (ind, rect) in enumerate(rects):
          determine the facial landmarks for the face region, then
          convert the facial landmark (x, y)-coordinates to a NumPy
          array
@@ -32,16 +32,16 @@
     
          loop over the (x, y)-coordinates for the facial landmarks
          drawing the marks on the image
-        for (x, y) in shape:
+         for (x, y) in shape:
             cv2.circle(image, (x, y), 1, (0, 255, 0), 2)
     
    
-    cv2.imshow("Output", image)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+       cv2.imshow("Output", image)
+       if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-     cv2.destroyAllWindows()
-     cap.release()
+       cv2.destroyAllWindows()
+       cap.release()_
 
 
 -2. **Yawing**
