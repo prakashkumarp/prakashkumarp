@@ -15,7 +15,7 @@
     cap = cv2.VideoCapture( 0,cv2.CAP_DSHOW)
  
      while True:
-    - load the input image and convert it to grayscale
+    - load the given image and convert it into grayscale
     _, image = cap.read()
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         
@@ -31,7 +31,7 @@
         shape = face_utils.shape_to_np(shape)
     
         # loop over the (x, y)-coordinates for the facial landmarks
-        # and draw them on the image
+        # drawing the marks on the image
         for (x, y) in shape:
             cv2.circle(image, (x, y), 1, (0, 255, 0), 2)
     
