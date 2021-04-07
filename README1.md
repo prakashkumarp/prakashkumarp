@@ -8,21 +8,21 @@
        import cv2
  
 
-     p = "shape_predictor_68_face_landmarks.dat"
-     detector = dlib.get_frontal_face_detector()
-     predictor = dlib.shape_predictor(p)
+       p = "shape_predictor_68_face_landmarks.dat"
+       detector = dlib.get_frontal_face_detector()
+      predictor = dlib.shape_predictor(p)
 
-    cap = cv2.VideoCapture( 0,cv2.CAP_DSHOW)
+      cap = cv2.VideoCapture( 0,cv2.CAP_DSHOW)
  
-     while True:
-    - load the given image and convert it into grayscale
-    _, image = cap.read()
-    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+      while True:
+     load the given image and convert it into grayscale
+     _, image = cap.read()
+      gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         
-    - detecting face in the grayscale image
+    detecting face in the grayscale image
     rects = detector(gray, 0)
     
-    - looping over the face detections
+    looping over the face detections
     for (ind, rect) in enumerate(rects):
          determine the facial landmarks for the face region, then
          convert the facial landmark (x, y)-coordinates to a NumPy
