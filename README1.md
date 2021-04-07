@@ -1,6 +1,6 @@
 # Driver Drowsiness Detection
 - Modules
-  - Yawing
+- Yawing
 import cv2
 import dlib
 import numpy as np
@@ -34,7 +34,7 @@ def anno_landmarks(im, landmarks):
         cv2.circle(im, pos, 3, color=(0, 255, 255))
     return im
 
-def top_lip(landmarks):
+    def top_lip(landmarks):
     top_lip_pnts = []
     for i in range(50,53):
         top_lip_pnts.append(landmarks[i])
@@ -44,7 +44,7 @@ def top_lip(landmarks):
     top_lip_mean_is = np.mean(top_lip_pnts, axis=0)
     return int(top_lip_mean_is[:,1])
 
-def bottom_lip(landmarks):
+     def bottom_lip(landmarks):
     bottom_lip_pts = []
     for i in range(65,68):
         bottom_lip_pts.append(landmarks[i])
@@ -54,7 +54,7 @@ def bottom_lip(landmarks):
     bottom_lip_mean = np.mean(bottom_lip_pts, axis=0)
     return int(bottom_lip_mean[:,1])
 
-def is_mouth_open(image):
+     def is_mouth_open(image):
     landmarks = get_landmarks(image)
     
     if landmarks == "error":
@@ -71,11 +71,11 @@ def is_mouth_open(image):
     #cv2.waitKey(0)
     #cv2.destroyAllWindows()
 
-cap = cv2.VideoCapture(0)
-yawns = 0
-yawn_statu = False 
+     cap = cv2.VideoCapture(0)
+     yawns = 0
+    yawn_statu = False 
 
-while True:
+     while True:
     ret, frame = cap.read()   
     image_landmarks, lip_distance = is_mouth_open(frame)
     
@@ -105,5 +105,5 @@ while True:
     if cv2.waitKey(1) == 13: #13 is the Enter Key
         break
         
-cap.release()
-cv2.destroyAllWindows() 
+       cap.release()
+    cv2.destroyAllWindows() 
