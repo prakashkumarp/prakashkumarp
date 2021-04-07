@@ -1,6 +1,6 @@
 # Driver Drowsiness Detection
 - **Modules**
-- 1. **FacialLandmarks**
+-1. **FacialLandmarks**
 
  import the necessary packages for facial landmarks detection
     from imutils import face_utils
