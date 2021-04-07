@@ -2,7 +2,7 @@
 - **Modules**
 -1. **FacialLandmarks**
 
-      _import the necessary packages for facial landmarks detection
+      import the necessary packages for facial landmarks detection
        from imutils import face_utils
        import dlib
        import cv2
